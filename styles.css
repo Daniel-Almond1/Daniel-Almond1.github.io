@@ -358,3 +358,22 @@ form {
   transform: scale(1);
   transition: transform 0.3s ease-in-out 0.1s;
 }
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.video-container video {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.video-container p {
+  font-size: 16px;
+  color: var(--cg-black);
+}
