@@ -1,3 +1,8 @@
-document.querySelector(".menu-toggle").addEventListener("click", function () {
-    document.querySelector(".navbar").classList.toggle("active");
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector(".navbar");
+    
+    menuToggle.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+    });
 });

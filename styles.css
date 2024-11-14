@@ -75,6 +75,11 @@ body {
 .navbar a:active {
   color: var(--cg-blue);
 }
+.navbar.active .nav-list {
+  display: flex; /* Ensures items are shown */
+  background-color: rgba(42, 101, 79, 0.8); /* Slightly transparent background */
+  flex-direction: column;
+}
 
 /* Hamburger menu styling */
 .menu-toggle {
