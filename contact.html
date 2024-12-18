@@ -1,44 +1,61 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Personal Website Contact</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<head>
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  
 </head>
 <body>
   <nav class="navbar">
-    <h1 class="logo"><a href="index.html">Daniel's Personal Website</a></h1>
+    <h1><a href="index.html">Daniel's Personal Website</a></h1>
     <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="certifications.html">Certifications</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-</nav>
-    <main>
-        <h2 class="page-title">Contact Page</h2>
-        <form id="contact-form">
-            <h3><Center>Name</Center></h3>
-            <input id="Name" type="text">
-            <h3><Center>Email</Center></h3>
-            <input id="Email" type="email">
-            <h3><Center>Message</Center></h3>
-            <textarea id="TextOnContactPage"></textarea>
-            <center><input id="ButtonOnContactPage" type="Submit"></center>
-            </div>
-        </form>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p><center>Thanks for Visiting!</center></p>
-    </main>
-    <footer class="footer"><center>© 2023 Daniel's Personal | All Rights Reserved | Thanks for visiting</center></footer>
-</body>
+  </nav>
+  
+  <main>
+    <h2 class="page-title">Contact Me</h2>
+    <div class="container">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3>Contact Form</h3>
+        <input type="text" placeholder="Enter your name">
+        <input type="email" placeholder="Enter your email">
+        <textarea rows="5" placeholder="Enter your message"></textarea>
+        <input type="submit" value="Send Message">
+      </div>
 
+      <!-- Social Media Links -->
+      <div class="social-links">
+        <h3>Social Media</h3>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="assets/instagram.png" alt="Instagram"> Instagram
+        </a>
+        <a href="https://github.com" target="_blank">
+          <img src="assets/github.png" alt="GitHub"> GitHub
+        </a>
+        <a href="https://x.com" target="_blank">
+          <img src="assets/x.png" alt="X"> X
+        </a>
+        <a href="https://facebook.com" target="_blank">
+          <img src="assets/facebook.png" alt="Facebook"> Facebook
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <img src="assets/linkedin.png" alt="LinkedIn"> LinkedIn
+        </a>
+      </div>
+    </div>
+    <div class="page-bottom-separator"></div>
+  </main>
+  
+  <footer class="footer">
+    © 2023 Daniel's Personal | All Rights Reserved | Thanks for visiting
+  </footer>
+</body>
 </html>
