@@ -377,3 +377,83 @@ form {
   font-size: 16px;
   color: var(--cg-black);
 }
+   .education-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        /* Card styling */
+        .education-card {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 800px;
+            max-width: 100%;
+            background-color: #f8f8f8;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .education-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .education-card-content {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .education-card-content h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .education-card-content p {
+            margin: 5px 0;
+        }
+
+        .education-card-content .coursework {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .coursework-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .education-card-content .coursework-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .education-card-content .coursework-buttons a {
+            color: #fff;
+            text-decoration: none;
+            background-color: #ADD8E6;
+            padding: 5px 15px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        .education-card-content .coursework-buttons a:hover {
+            background-color: #87CEEB;
+        }
+
+        .footer {
+            margin-top: 40px;
+        }
