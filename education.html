@@ -1,8 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Personal Website Certifications </title>
+    <title>Daniel's Education</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+        /* Card container styling */
+        .education-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        /* Card styling */
+        .education-card {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 800px;
+            max-width: 100%;
+            background-color: #f8f8f8;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .education-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .education-card-content {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .education-card-content h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .education-card-content p {
+            margin: 5px 0;
+        }
+
+        .education-card-content .coursework {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .coursework-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .education-card-content .coursework-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .education-card-content .coursework-buttons a {
+            color: #fff;
+            text-decoration: none;
+            background-color: #ADD8E6;
+            padding: 5px 15px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        .education-card-content .coursework-buttons a:hover {
+            background-color: #4abeec;
+        }
+
+        .footer {
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -18,10 +101,71 @@
         </ul>
     </nav>
     <main>
-        <h2 class="page-title">Certification Page</h2>
-        <p>Nothing to report yet! </p>
-    </main>
-    <footer class="footer"><center>© 2024 Daniel's Personal | All Rights Reserved | Thanks for visiting</center></footer>
-</body>
+        <h2 class="page-title">Education</h2>
+        <div class="education-container">
 
+            <!-- College -->
+            <div class="education-card">
+                <img src="https://via.placeholder.com/150" alt="College Image">
+                <div class="education-card-content">
+                    <h3>California Polytechnic State University</h3>
+                    <p><strong>Level:</strong> College</p>
+                    <p><strong>Degree:</strong> Bachelor of Science (In Progress)</p>
+                    <p><strong>Date:</strong> 2017 - Present</p>
+                    <p><strong>Description:</strong> Pursuing a Bachelor of Science in Business Administration with a concentration in Information Systems and a minor in Computer Science.</p>
+                    <p><strong>Location:</strong> San Luis Obispo, CA</p>
+                    <div class="coursework">
+                        <p class="coursework-label">Course Work:</p>
+                        <div class="coursework-buttons">
+                            <a href="#">Project One</a>
+                            <a href="#">Project Two</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Junior College -->
+            <div class="education-card">
+                <img src="https://via.placeholder.com/150" alt="Junior College Image">
+                <div class="education-card-content">
+                    <h3>DEF Community College</h3>
+                    <p><strong>Level:</strong> Junior College</p>
+                    <p><strong>Degree:</strong> Associate of Arts</p>
+                    <p><strong>Date:</strong> 2015 - 2017</p>
+                    <p><strong>Description:</strong> Completed general education requirements, served as student government secretary, and made the Dean's List.</p>
+                    <p><strong>Location:</strong> Nearby City, USA</p>
+                </div>
+            </div>
+
+            <!-- High School -->
+            <div class="education-card">
+                <img src="https://via.placeholder.com/150" alt="High School Image">
+                <div class="education-card-content">
+                    <h3>ABC High School</h3>
+                    <p><strong>Level:</strong> High School</p>
+                    <p><strong>Degree:</strong> High School Diploma</p>
+                    <p><strong>Date:</strong> 2011 - 2015</p>
+                    <p><strong>Description:</strong> Graduated with honors, participated in debate club, and played varsity basketball.</p>
+                    <p><strong>Location:</strong> Hometown, USA</p>
+                </div>
+            </div>
+
+            <!-- Middle School -->
+            <div class="education-card">
+                <img src="https://via.placeholder.com/150" alt="Middle School Image">
+                <div class="education-card-content">
+                    <h3>XYZ Middle School</h3>
+                    <p><strong>Level:</strong> Middle School</p>
+                    <p><strong>Date:</strong> 2008 - 2011</p>
+                    <p><strong>Description:</strong> Participated in science fairs, joined the soccer team, and excelled in mathematics.</p>
+                    <p><strong>Location:</strong> Hometown, USA</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <center>© 2024 Daniel's Personal | All Rights Reserved | Thanks for visiting</center>
+    </footer>
+</body>
 </html>
