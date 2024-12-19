@@ -560,28 +560,35 @@ form {
       color: var(--cg-black);
     }
 
-    .contact-form input, .contact-form textarea {
-      width: 95%;
-      padding: 10px;
-      margin: 10px 0px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      font-size: 1rem;
-    }
+   .contact-form input, .contact-form textarea {
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
 
-    .contact-form input[type="submit"] {
-      background: var(--cg-black);
-      color: var(--cg-white);
-      border: none;
-      cursor: pointer;
-      padding: 10px 20px;
-      font-size: 1rem;
-      transition: background 0.3s ease;
-    }
+.contact-form input[type="submit"] {
+  width: 100%; /* Match width with the text boxes */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  background: var(--cg-black);
+  color: var(--cg-white);
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px; /* Same padding as the text boxes */
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  margin: 10px 0; /* Matches margin with other inputs */
+}
 
-    .contact-form input[type="submit"]:hover {
-      background: var(--cg-blue);
-    }
+.contact-form input[type="submit"]:hover {
+  background: var(--cg-blue);
+}
+
+      
+    
 
     .social-links {
       display: flex;
@@ -624,6 +631,7 @@ form {
     .page-bottom-separator {
       margin: 20px 0;
       height: 40px;
+      
     }
 
     @media (max-width: 768px) {
