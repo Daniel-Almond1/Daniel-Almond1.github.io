@@ -509,7 +509,7 @@ form {
 
         .certification-card .download-button {
             margin-top: 10px;
-            background-color: #007BFF;
+            background-color: var(--cg-black);
             color: white;
             text-decoration: none;
             padding: 10px 15px;
