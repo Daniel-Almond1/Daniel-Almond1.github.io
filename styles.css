@@ -669,3 +669,8 @@ h2.page-title {
 .download-button:hover {
   background-color: var(--cg-blue);
 }
+.page-bottom-separator {
+  width: 100%; /* Makes the separator span the full width of the container */
+  height: 2px; /* Sets the thickness of the separator */
+  margin: 20px 0; /* Adds spacing above and below the separator */
+}
