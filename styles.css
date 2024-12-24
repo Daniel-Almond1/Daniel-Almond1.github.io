@@ -5,6 +5,9 @@
   --cg-grey: rgb(220, 236, 247);
   --cg-white: rgb(248, 248, 248);
 }
+.text-black {
+  color: black !important;
+}
 
 html {
   height: 100%;
@@ -738,7 +741,6 @@ h2.page-title {
 .project-description-section p {
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--cg-black);
 }
 
 .project-info-section ul {
