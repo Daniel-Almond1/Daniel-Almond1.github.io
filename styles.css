@@ -1,6 +1,5 @@
 :root {
-  /* variables */
-  --cg-black: rgb(42, 101, 79);
+  --cg-black: rgb(38, 104, 78);
   --cg-blue: rgb(182, 200, 251);
   --cg-grey: rgb(220, 236, 247);
   --cg-white: rgb(248, 248, 248);
@@ -22,14 +21,12 @@ body {
   font-family: monospace;
 }
 
-/* CSS for navigation */
-
 .navbar {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
-  height: 6%;
+  height: 5%;
   z-index: 10;
   display: flex;
   justify-content: space-between;
@@ -40,33 +37,29 @@ body {
   padding: 0;
 }
 
-/* Logo styling */
 .navbar .logo a {
   color: var(--cg-white);
   text-decoration: none;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-family: Georgia;
 }
 
-/* Navigation list styling */
 .nav-list {
   display: flex;
   flex-direction: row;
   list-style: none;
   position: relative;
-  right: 30px;
   margin: 0;
   padding: 0;
 }
 
-/* Link styling */
 .navbar a {
   color: var(--cg-white);
   font-weight: bold;
-  margin: 0 12px;
+  margin: 0 7px;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-family: Georgia;
 }
 
@@ -78,20 +71,15 @@ body {
 .navbar a:active {
   color: var(--cg-blue);
 }
+
 .navbar.active .nav-list {
-  display: flex; /* Ensures items are shown */
-  background-color: rgba(
-    42,
-    101,
-    79,
-    0.8
-  ); /* Slightly transparent background */
+  display: flex;
+  background-color: rgba(42, 101, 79, 0.8);
   flex-direction: column;
 }
 
-/* Hamburger menu styling */
 .menu-toggle {
-  display: none; /* Hide the hamburger menu by default */
+  display: none;
   background: none;
   border: none;
   font-size: 1.5rem;
@@ -99,13 +87,12 @@ body {
   cursor: pointer;
 }
 
-/* Responsive styling for smaller screens */
 @media (max-width: 768px) {
   .nav-list {
-    display: none; /* Hide the nav items by default on small screens */
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px; /* Position below the navbar */
+    top: 60px;
     right: 0;
     background-color: var(--cg-black);
     width: 100%;
@@ -118,11 +105,11 @@ body {
   }
 
   .menu-toggle {
-    display: block; /* Show the hamburger menu on small screens */
+    display: block;
   }
 
   .navbar.active .nav-list {
-    display: flex; /* Show the nav items when navbar is active */
+    display: flex;
   }
 }
 
@@ -149,23 +136,15 @@ main {
   font-family: Georgia;
 }
 
-/* CSS for portfolio grid */
-
 .project {
   display: flex;
   flex-direction: row;
   max-width: 100%;
   margin: 1em 0 2em 0;
-
-  /* Debug border */
-  /* border: 2px solid blue; */
 }
 
 .item-link {
   width: 70%;
-
-  /* Debug border */
-  /* border: 2px solid red; */
 }
 
 .project-image {
@@ -174,9 +153,6 @@ main {
   height: 500px;
   flex-basis: 50px;
   flex-grow: 2;
-
-  /* Debug border */
-  /* border: 2px solid black; */
 }
 
 .project-details {
@@ -189,13 +165,9 @@ main {
   margin: 0px;
   line-height: 1.5;
   overflow: scroll;
-
   flex-direction: column;
   text-align: center;
   justify-content: center;
-
-  /* Debug border */
-  /* border: 2px solid green; */
 }
 
 .project-details a {
@@ -219,8 +191,6 @@ main {
   font-size: 20px;
 }
 
-/* CSS for home page */
-
 .about {
   display: flex;
   align-items: center;
@@ -229,13 +199,11 @@ main {
   background-color: #f8f8f8;
   border: 1px solid #ccc;
   border-radius: 5px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .about-image img {
   max-width: 300px;
   border-radius: 3px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
 }
 
 .about-text {
@@ -253,18 +221,13 @@ main {
   line-height: 1.5;
 }
 
-/* CSS for resume page */
-
 .button {
   background-color: var(--cg-black);
   border: none;
   color: var(--cg-white);
-
   font-family: monospace;
-
   padding: 5px 7px;
   text-align: center;
-
   border-radius: 2px;
 }
 
@@ -275,8 +238,6 @@ main {
 .resume h2 {
   font-family: Georgia;
 }
-
-/* CSS for contact form */
 
 label {
   display: block;
@@ -297,13 +258,10 @@ textarea {
   resize: none;
 }
 
-/* Add some spacing to the form */
 form {
   width: 500px;
   margin: 0 auto;
 }
-
-/* CSS for footer */
 
 .footer {
   display: flex;
@@ -357,6 +315,7 @@ form {
   transition: opacity 0.5s ease;
   opacity: 1;
 }
+
 .project-card:not(:hover) .project-description {
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -366,6 +325,7 @@ form {
   transform: scale(1);
   transition: transform 0.3s ease-in-out 0.1s;
 }
+
 .video-container {
   display: flex;
   flex-direction: column;
@@ -385,6 +345,7 @@ form {
   font-size: 16px;
   color: var(--cg-black);
 }
+
 .education-container {
   display: flex;
   flex-direction: column;
@@ -394,7 +355,6 @@ form {
   margin-bottom: 40px;
 }
 
-/* Card styling */
 .education-card {
   display: flex;
   flex-direction: row;
@@ -466,17 +426,15 @@ form {
   margin-top: 40px;
 }
 
-/* Card container styling */
 .certification-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   margin-top: 20px;
-  padding-bottom: 40px; /* Bottom padding */
+  padding-bottom: 40px;
 }
 
-/* Certification card styling */
 .certification-card {
   width: 600px;
   border: 1px solid #ccc;
@@ -503,7 +461,7 @@ form {
   width: 150px;
   height: auto;
   border-radius: 8px;
-  margin-left: auto; /* Aligns the image to the right */
+  margin-left: auto;
 }
 
 .certification-card .content {
@@ -542,45 +500,41 @@ h2.page-title {
   color: var(--cg-black);
 }
 
-/* General Container for Contact Page */
 .container {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  justify-content: space-between; /* Space out the form and info */
-  gap: 20px; /* Add space between form and info */
-  max-width: 1200px; /* Prevent stretching beyond this width */
-  margin: 0 auto; /* Center the container */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
 }
 
-/* Contact Form Container */
 .contact-form {
-  flex: 1; /* Flex item takes equal space */
-  max-width: 500px; /* Prevent the form from stretching too wide */
-  width: 100%; /* Ensure the form adjusts within container */
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
   padding: 20px;
   background: var(--cg-white);
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Input Boxes and Textarea */
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-  width: 100%; /* Ensure inputs span the form container */
-  padding: 12px; /* Add padding inside the fields */
+  width: 100%;
+  padding: 12px;
   margin: 10px 0;
-  border: 0px solid var(--cg-black); /* Match the theme */
-  border-radius: 5px; /* Subtle rounded corners */
-  font-size: 1rem; /* Consistent font size */
-  box-sizing: border-box; /* Include padding and border in width */
-  resize: none; /* Prevent textarea resizing */
+  border: 0px solid var(--cg-black);
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  resize: none;
 }
 
-/* Submit Button */
 .contact-form input[type="submit"] {
-  width: 100%; /* Match the width of the input boxes */
+  width: 100%;
   padding: 12px;
   margin: 10px 0;
   border: none;
@@ -596,32 +550,26 @@ h2.page-title {
   background: var(--cg-blue);
 }
 
-/* Section Headers */
-/* Section Titles */
 .contact-form h3,
 .social-links h3 {
-  font-family: Georgia, serif; /* Match the navigation font */
-  color: var(--cg-black); /* Navigation green color */
-  font-size: 1.5rem; /* Slightly smaller than the navbar */
-  text-align: center; /* Center-align the text */
-  font-weight: bold; /* Emphasize the titles */
-  margin-bottom: 10px; /* Add space below the titles */
-  /* Match the style of the navbar links */
-  letter-spacing: 0.5px; /* Add spacing for a clean look */
+  font-family: Georgia, serif;
+  color: var(--cg-black);
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
 }
 
-/* Social Links Section */
 .social-links {
-  flex: 1; /* Flex item takes equal space */
-  max-width: 400px; /* Prevent the social section from stretching */
-  width: 100%; /* Ensure it adjusts within container */
+  flex: 1;
+  max-width: 400px;
+  width: 100%;
   padding: 20px;
   background: var(--cg-white);
   border-radius: 15px;
-  /* Center-align the text */
 }
 
-/* Social Media Buttons */
 .social-buttons a.button {
   display: inline-block;
   text-decoration: none;
@@ -639,20 +587,18 @@ h2.page-title {
   background: var(--cg-blue);
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Stack form and social links */
-    align-items: center; /* Center align the stacked elements */
+    flex-direction: column;
+    align-items: center;
   }
 
   .contact-form,
   .social-links {
-    max-width: 90%; /* Reduce size for smaller screens */
+    max-width: 90%;
   }
 }
 
-/* General button styling */
 .download-button {
   background-color: var(--cg-black);
   color: var(--cg-white);
@@ -672,21 +618,13 @@ h2.page-title {
 .download-button:hover {
   background-color: var(--cg-blue);
 }
+
 .page-bottom-separator {
-  width: 100%; /* Makes the separator span the full width of the container */
-  height: 2px; /* Sets the thickness of the separator */
-  margin: 20px 0; /* Adds spacing above and below the separator */
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
 }
 
-/* Project Page Title */
-.project-page-title {
-  text-align: left;
-  margin: 30px 0 20px 10%;
-  font-size: 2.5rem;
-  color: var(--cg-black);
-}
-
-/* Project Page Title */
 .project-page-title {
   text-align: center;
   margin: 30px 0 20px 0;
@@ -694,7 +632,6 @@ h2.page-title {
   color: var(--cg-black);
 }
 
-/* Project Details Container */
 .project-details-container {
   max-width: 80%;
   margin: 0 auto;
@@ -703,7 +640,6 @@ h2.page-title {
   gap: 30px;
 }
 
-/* Sections Styling */
 .project-info-section,
 .project-description-section,
 .project-gallery-section {
@@ -721,12 +657,11 @@ h2.page-title {
   color: var(--cg-black);
 }
 
-/* Gallery Styling */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 15px;
-  text-align: center; /* Center aligns image labels */
+  text-align: center;
 }
 
 .gallery-item {
@@ -741,13 +676,11 @@ h2.page-title {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Image hover effect */
 .gallery-image:hover {
   transform: scale(1.1);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Image labels */
 .gallery-label {
   font-style: italic;
   margin-top: 8px;
@@ -756,12 +689,10 @@ h2.page-title {
   color: #555;
 }
 
-/* Open image in a new window */
 .gallery-image-link {
   text-decoration: none;
 }
 
-/* Utility Styles */
 .project-info-section p,
 .project-info-section ul,
 .project-description-section p {
