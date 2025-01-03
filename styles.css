@@ -1,5 +1,5 @@
 :root {
-  --cg-black: rgb(38, 104, 78);
+  --cg-black: rgb(43, 80, 102);
   --cg-blue: rgb(182, 200, 251);
   --cg-grey: rgb(220, 236, 247);
   --cg-white: rgb(248, 248, 248);
@@ -42,7 +42,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 1px;
-  font-family: Georgia;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-list {
@@ -60,7 +60,7 @@ body {
   margin: 0 7px;
   text-decoration: none;
   letter-spacing: 1px;
-  font-family: Georgia;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar a:hover {
@@ -114,7 +114,7 @@ body {
 }
 
 .logo a {
-  font-family: Georgia;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo a:hover {
@@ -133,7 +133,7 @@ main {
   display: flex;
   justify-content: center;
   font-size: 40px;
-  font-family: Georgia;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .project {
@@ -707,4 +707,18 @@ h2.page-title {
 .project-info-section ul li {
   margin-bottom: 10px;
   list-style: disc;
+}
+.education-card-content .button {
+  margin-top: 15px;
+  align-self: flex-start;
+}
+.education-card-content .button-row {
+
+  gap: 10px; /* Space between buttons */
+  margin-top: 15px;
+}
+
+.education-card-content .button-row .button {
+  flex: 1; /* Optional: ensures buttons are evenly sized */
+  text-align: center;
 }
