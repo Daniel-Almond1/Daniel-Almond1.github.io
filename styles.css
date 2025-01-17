@@ -199,6 +199,11 @@ main {
   background-color: #f8f8f8;
   border: 1px solid #ccc;
   border-radius: 5px;
+  width: 100%;            /* Full width by default */
+  max-width: 1200px;      /* Maximum width when the screen is wide */
+  margin: 0 auto;         /* Center horizontally */
+  padding: 16px;          /* Optional padding */
+  box-sizing: border-box;
 }
 
 .about-image img {
@@ -329,22 +334,28 @@ form {
 .video-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
   text-align: center;
-  margin: 20px 0;
+  margin: 20px auto; /* Center container horizontally */
+  width: 100%; /* Allow full-width scaling */
+  max-width: 800px; /* Restrict the container width */
 }
 
 .video-container video {
-  max-width: 600px;
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  max-width: 100%; /* Video fills the container */
+  width: 100%; /* Ensure video takes up full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Add rounded corners */
+  margin-bottom: 15px; /* Space below the video */
 }
 
 .video-container p {
   font-size: 16px;
   color: var(--cg-black);
+  text-align: center; /* Center the text */
 }
+
 
 .education-container {
   display: flex;
@@ -362,7 +373,7 @@ form {
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 800px;
+  width: 90%;
   max-width: 100%;
   background-color: #f8f8f8;
   text-align: left;
@@ -436,7 +447,8 @@ form {
 }
 
 .certification-card {
-  width: 600px;
+  width: 90%;
+  max-width: 100%;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
