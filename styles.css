@@ -199,10 +199,10 @@ main {
   background-color: #f8f8f8;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 100%;            /* Full width by default */
-  max-width: 1200px;      /* Maximum width when the screen is wide */
-  margin: 0 auto;         /* Center horizontally */
-  padding: 16px;          /* Optional padding */
+  width: 100%; /* Full width by default */
+  max-width: 1200px; /* Maximum width when the screen is wide */
+  margin: 0 auto; /* Center horizontally */
+  padding: 16px; /* Optional padding */
   box-sizing: border-box;
 }
 
@@ -355,7 +355,6 @@ form {
   color: var(--cg-black);
   text-align: center; /* Center the text */
 }
-
 
 .education-container {
   display: flex;
@@ -725,7 +724,6 @@ h2.page-title {
   align-self: flex-start;
 }
 .education-card-content .button-row {
-
   gap: 10px; /* Space between buttons */
   margin-top: 15px;
 }
@@ -733,4 +731,420 @@ h2.page-title {
 .education-card-content .button-row .button {
   flex: 1; /* Optional: ensures buttons are evenly sized */
   text-align: center;
+}
+
+/* Optional: A common best practice for responsive images.
+   Your .gallery-image class already does this, but this can be a global helper.
+   You can add this to your styles.css or keep it here if preferred. */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-dance-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.banner-placeholder {
+  background-color: #e0e0e0;
+  width: 100%;
+  min-height: 300px; /* Adjust min-height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.page-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.text-black {
+  font-size: 18px;
+}
+
+.professional-highlights {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: var(--cg-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.professional-highlights h3 {
+  text-align: center;
+  font-size: 24px;
+  color: var(--cg-black);
+  margin-bottom: 20px;
+}
+
+.professional-highlights ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.professional-highlights li {
+  margin-bottom: 10px;
+}
+
+.dance-journey {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: var(--cg-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.dance-journey h3 {
+  text-align: center;
+  font-size: 24px;
+  color: var(--cg-black);
+  margin-bottom: 20px;
+}
+
+.dance-journey p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.competitions-achievements {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: var(--cg-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.competitions-achievements h3 {
+  text-align: center;
+  font-size: 24px;
+  color: var(--cg-black);
+  margin-bottom: 20px;
+}
+
+.competitions-achievements h4 {
+  font-size: 20px;
+  color: var(--cg-black);
+  margin-bottom: 10px;
+}
+
+.competitions-achievements ul {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.competitions-achievements
+  h4[style="font-size: 20px; color: var(--cg-black); margin-top: 20px; margin-bottom: 10px;"] {
+  font-size: 20px;
+  color: var(--cg-black);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.competitions-achievements p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.competitions-achievements .button {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.styles-specializations {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: var(--cg-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.styles-specializations h3 {
+  text-align: center;
+  font-size: 24px;
+  color: var(--cg-black);
+  margin-bottom: 20px;
+}
+
+.styles-specializations ul {
+  font-size: 16px;
+  line-height: 1.8;
+  padding-left: 20px;
+}
+
+.styles-specializations ul ul {
+  padding-left: 20px;
+  list-style-type: circle;
+}
+
+.gallery-section {
+  margin-bottom: 40px;
+  text-align: center;
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.gallery-section h3 {
+  font-size: 24px;
+  color: var(--cg-black);
+  margin-bottom: 20px;
+}
+
+.gallery-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.gallery-item {
+  margin-bottom: 15px;
+}
+
+.video-placeholder {
+  background-color: #e0e0e0;
+  width: 100%; /* Make placeholder responsive */
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.video-placeholder span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery-section .text-black[style="font-size: 16px; margin-top: 20px;"] {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.testimonials-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: var(--cg-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.testimonials-section h3 {
+  text-align: center;
+  font-size: 24px;
+  color: var(--cg-black);
+  margin-bottom: 20px;
+}
+
+.testimonials-section blockquote {
+  border-left: 5px solid var(--cg-blue);
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.testimonials-section blockquote p {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.testimonials-section blockquote footer {
+  font-size: 14px;
+  color: #555;
+}
+
+.cta-section {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 90%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.cta-section h3 {
+  font-size: 22px;
+  color: var(--cg-black);
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+p[style="text-align: center; font-size: 14px; margin-top: 30px;"] {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.banner-image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns for images */
+  gap: 10px; /* Space between images */
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed for your desired banner width */
+  margin: 0 auto; /* Center the grid */
+}
+
+.banner-image {
+  width: 100%;
+  height: 450px; /* Fixed height for vertical photos, adjust as needed */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+  border-radius: 8px; /* Rounded corners for the images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+@media (max-width: 768px) {
+  .banner-image-grid {
+    grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
+  }
+
+  .banner-image {
+    height: auto; /* Allow height to adjust on smaller screens */
+    max-height: 400px; /* Optional: limit max height on mobile */
+  }
+}
+.page-top-separator {
+  width: 100%;
+  height: 2px; /* Or any height you prefer for the line */
+  background-color: var(--cg-black); /* Or any color you prefer */
+  margin: 20px 0; /* Adds space above and below the separator */
+}
+.gallery-item video {
+  width: 100%;
+  cursor: pointer;
+}
+
+.gallery-item video:hover {
+  /* Start playing on hover */
+  /* JS will handle the play; this CSS just sets visual cues */
+}
+
+.hero-section {
+  text-align: center;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Prevents image stretching */
+  border: 4px solid var(--cg-white);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: var(--cg-black);
+  margin: 10px 0 5px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--cg-black);
+  font-weight: normal;
+  margin: 0 0 20px 0;
+}
+
+.hero-bio {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* --- Navigation Grid Section Styles --- */
+.link-grid-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0 60px 0; /* Extra bottom padding to push footer down */
+}
+
+.link-grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Responsive grid */
+  gap: 25px;
+  padding: 20px;
+}
+
+.link-card {
+  background-color: var(--cg-white);
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-decoration: none;
+  color: var(--cg-black);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.link-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(43, 80, 102, 0.2);
+  border-color: var(--cg-blue);
+}
+
+.link-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.link-card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.footer {
+  position: relative; /* Changed from absolute to relative */
 }
