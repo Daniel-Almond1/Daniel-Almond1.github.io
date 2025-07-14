@@ -4,10 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Daniel Almond | Home</title>
+    <title>Daniel Almond | Website Moved</title>
+    <style>
+      .redirect-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+      }
+      .redirect-button {
+        display: inline-block;
+        background: white;
+        color: #667eea;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 25px;
+        font-weight: bold;
+        margin-top: 20px;
+        transition: transform 0.3s ease;
+      }
+      .redirect-button:hover {
+        transform: scale(1.05);
+      }
+      .spinner {
+        border: 4px solid rgba(255,255,255,0.3);
+        border-radius: 50%;
+        border-top: 4px solid white;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        margin: 20px auto;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
   </head>
 
   <body>
+          <div class="redirect-container">
+        <h1>Daniel Almond</h1>
+        <p>This website has moved to a new location!</p>
+        <p>Please visit my new website:</p>
+        <a href="https://danielalmond.info" class="redirect-button">Go to New Website</a>
+      </div>
+
+    <!-- ORIGINAL WEBSITE CODE - COMMENTED OUT BUT PRESERVED -->
+    <!--
     <nav class="navbar">
       <h1 class="logo"><a href="index.html">Daniel Almond</a></h1>
       <ul class="nav-list">
@@ -35,23 +84,19 @@
 
       <section class="about-me-section">
         <div class="about">
-          <!-- Image Container -->
-
           <div class="about-image">
             <img src="Assets/Index Assets/Index 4.JPG" height="300" />
           </div>
 
-          <!-- Text Container -->
-
           <div class="about-text">
             <p class="text-black">
               Hello, and thanks for taking the time to visit my website. My name
-              is Daniel Almond, and here’s a little about me:
+              is Daniel Almond, and here's a little about me:
 
               <br /><br />
 
-              I’m a doer. In school, life, hobbies, and other activities, I love
-              being the first to take action or try something new. I’ve had a
+              I'm a doer. In school, life, hobbies, and other activities, I love
+              being the first to take action or try something new. I've had a
               supportive upbringing and a loving family that has allowed me to
               explore many different activities and career paths. This is why I
               can say with certainty that real estate is in my future. I love
@@ -59,32 +104,19 @@
               flipping, or analyzing, my future in real estate will combine some
               or all of these exciting activities to help me grow personally and
               professionally. I thrive working with people in teams or
-              independently, armed with just two hands and a laptop. I’m excited
+              independently, armed with just two hands and a laptop. I'm excited
               to share what makes me a unique person and a valuable asset.
 
               <br /><br />
 
               I hope you enjoy exploring the features of this website, as it
-              showcases some of the real projects and activities I’ve been
+              showcases some of the real projects and activities I've been
               involved in.
             </p>
           </div>
         </div>
       </section>
-      <!--
-      <h2 class="page-title">Introduction Video</h2>
-      <div class="about">
-        <div class="video-container">
-          <video controls width="100%" max-width="600px">
-            <source src="Assets/Index Assets/Website Video 1.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <p class="text-black">
-            Here is a short introduction video, Enjoy watching and don't forget to reach out!
-            </p>
-        </div>
-      </div>
--->
+
       <div class="page-bottom-separator"></div>
 
       <section class="link-grid-section">
@@ -134,5 +166,6 @@
         © 2025 Daniel Almond | All Rights Reserved | Last updated: June 2025
       </center>
     </footer>
+    -->
   </body>
 </html>
